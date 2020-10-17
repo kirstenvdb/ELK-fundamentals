@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible_playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-!(Ansible/filebeat-playbook.yml)
+![filebeat playbook](Ansible/filebeat-playbook.yml "filebeat playbook")
 
 This document contains the following details:
 - Description of the Topology
@@ -29,7 +29,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat records metrics from the host system and also sends the data to Elasticsearch.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
