@@ -67,7 +67,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
-- 119.18.1.175
+- my IP address
 
 Machines within the network can only be accessed by SSH from the Jump-Box-Provisioner.
 - Jump-Box-Provisioner was allowed access to the ELK-VM. It's IP address was 10.0.0.4.
@@ -76,10 +76,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump-Box-Provisioner | Yes              | 119.18.1.175    |
+| Jump-Box-Provisioner | Yes              | my IP address    |
 | Web-1   |  No                   |  10.0.0.4             |
 |  Web-2        |    No                 |   10.0.0.4       |
-| ELK-VM          |       No              |  119.18.1.175, 10.0.0.4     |
+| ELK-VM          |       No              |  my IP address, 10.0.0.4     |
 
 ### Elk Configuration
 
@@ -115,4 +115,4 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config file to Web-1 and Web-2 in /etc/filebeat.
 - Update the hosts file to include the Web-1, Web-2 and ELK-VM IP addresses. 
-- Run the playbook, and navigate to the Filebeat installation page on the ELK server GUI (http://119.18.1.175:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook, and navigate to the Filebeat installation page on the ELK server GUI (Kibana) to check that the installation worked as expected.
